@@ -1,8 +1,10 @@
 ﻿using System.Dynamic;
 using System.Numerics;
 using System.Reflection.Metadata;
+using System.Runtime.Intrinsics.X86;
 using System.Timers;
 using static System.Formats.Asn1.AsnWriter;
+using static System.Net.WebRequestMethods;
 
 namespace c_01
 {
@@ -73,21 +75,41 @@ namespace c_01
             /*
                double price = 49.99;
                int p = Convert.ToInt32(price);
-               string pagestext = "464";
-               int pg = Convert.ToInt32(pagestext);
-               string yeartext = "2023";
-
-               int yr = int.Parse(yeartext);
                */
             #endregion
             #region Q7
             //Given string pagesText = "464";, convert it into an int using the Convert class.
-
+            /*
             string pagestext = "464";
-            int pt = Convert.ToInt32(pagestext); 
+            int pt = Convert.ToInt32(pagestext);
+            */
             #endregion
+            #region Q8
+            //Given string yearText = "2023";, convert it using int.Parse().Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            /*
+               string yeartext = "2023";
 
+               int yr = int.Parse(yeartext);
+              
+                string badtext = "abc";
+
+                if(int.TryParse(badtext,out int v))
+                {
+                    Console.WriteLine("validnumber");
+                    Console.WriteLine(v);
+                }
+                else
+                {
+                    Console.WriteLine("invalid");
+                }
+                */
+
+            #endregion
            
+
+
+
+
         }
     }
 }
