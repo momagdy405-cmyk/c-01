@@ -1,4 +1,5 @@
 ﻿using System.Dynamic;
+using System.Net.NetworkInformation;
 using System.Numerics;
 using System.Reflection.Metadata;
 using System.Runtime.Intrinsics.X86;
@@ -145,6 +146,25 @@ namespace c_01
             Console.WriteLine(reviewer == null);
             */
             #endregion
+            #region Q13,Q14
+            //Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result.
+
+            // Using title from the previous question, use ?? to print "Untitled" if title is null.Then use ??= to assign title the value "Untitled" only if it's still null.
+
+            /*
+            Book? book = null;
+            Console.WriteLine(book?.title ?? "untitled");
+            tled");
+            if (book == null)
+            {
+                book = new Book();
+            }
+            book.title ??= "untitled"; 
+            */
+            #endregion
+            
+
+           
 
 
 
