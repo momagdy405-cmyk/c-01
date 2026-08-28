@@ -69,6 +69,17 @@ namespace c_01
                 double v = pages;
                 */
             #endregion
+            #region Q6
+            /*
+               double price = 49.99;
+               int p = Convert.ToInt32(price);
+               string pagestext = "464";
+               int pg = Convert.ToInt32(pagestext);
+               string yeartext = "2023";
+
+               int yr = int.Parse(yeartext);
+               */
+            #endregion
         }
     }
 }
