@@ -63,6 +63,12 @@ namespace c_01
                 }
                 */
             #endregion
+            #region Q5
+            /*
+                int pages = 300;
+                double v = pages;
+                */
+            #endregion
         }
     }
 }
