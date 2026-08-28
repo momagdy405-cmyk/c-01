@@ -37,7 +37,32 @@ namespace c_01
                 Console.WriteLine(b.GetType());
                 */
             #endregion
-            
+            #region q3
+            //Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.
+            //int pages = "464";
+
+            //int pages="495" this is a logical error it should be int pages=495;
+
+            #endregion
+            #region q4
+            /*
+                try
+                {
+                    int x = 10;
+                    int y = 0;
+                    Console.WriteLine(x / y)
+
+                }
+                catch(DivideByZeroException)
+                {
+                    Console.WriteLine("cannot divide by zero");
+                }
+                finally
+                {
+                    Console.WriteLine("done");
+                }
+                */
+            #endregion
         }
     }
 }
