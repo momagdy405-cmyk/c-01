@@ -105,7 +105,16 @@ namespace c_01
                 */
 
             #endregion
-           
+            #region Q9
+            //Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+
+            /*
+               int pages = 464;
+               string pg = pages.ToString();
+               Console.WriteLine(pg);
+               Console.WriteLine(pg.GetType());
+               */
+            #endregion
 
 
 
