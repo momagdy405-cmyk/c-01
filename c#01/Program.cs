@@ -1,5 +1,11 @@
 ﻿using System.Dynamic;
+using System.Net.NetworkInformation;
+using System.Numerics;
+using System.Reflection.Metadata;
+using System.Runtime.Intrinsics.X86;
+using System.Timers;
 using static System.Formats.Asn1.AsnWriter;
+using static System.Net.WebRequestMethods;
 
 namespace c_01
 {
@@ -34,6 +40,148 @@ namespace c_01
                 Console.WriteLine(b.GetType());
                 */
             #endregion
+            #region q3
+            //Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.
+            //int pages = "464";
+
+            //int pages="495" this is a logical error it should be int pages=495;
+
+            #endregion
+            #region q4
+            //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+
+            /*
+                try
+                {
+                    int x = 10;
+                    int y = 0;
+                    Console.WriteLine(x / y)
+
+                }
+                catch(DivideByZeroException)
+                {
+                    Console.WriteLine("cannot divide by zero");
+                }
+                finally
+                {
+                    Console.WriteLine("done");
+                }
+                */
+            #endregion
+            #region Q5
+            //Declare an int pages = 300; then store it in a double variable without using a cast.
+
+            /*
+                int pages = 300;
+                double v = pages;
+                */
+            #endregion
+            #region Q6
+            //Declare a double price = 49.99; then convert it into an int using a cast.
+
+            /*
+               double price = 49.99;
+               int p = Convert.ToInt32(price);
+               */
+            #endregion
+            #region Q7
+            //Given string pagesText = "464";, convert it into an int using the Convert class.
+            /*
+            string pagestext = "464";
+            int pt = Convert.ToInt32(pagestext);
+            */
+            #endregion
+            #region Q8
+            //Given string yearText = "2023";, convert it using int.Parse().Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+            /*
+               string yeartext = "2023";
+
+               int yr = int.Parse(yeartext);
+              
+                string badtext = "abc";
+
+                if(int.TryParse(badtext,out int v))
+                {
+                    Console.WriteLine("validnumber");
+                    Console.WriteLine(v);
+                }
+                else
+                {
+                    Console.WriteLine("invalid");
+                }
+                */
+
+            #endregion
+            #region Q9
+            //Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+
+            /*
+               int pages = 464;
+               string pg = pages.ToString();
+               Console.WriteLine(pg);
+               Console.WriteLine(pg.GetType());
+               */
+            #endregion
+            #region Q10
+            //Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+
+            /*
+                int copies = 100;
+                object obj = copies;
+                int z = (int)obj;
+                Console.WriteLine(obj);
+                Console.WriteLine(z);
+                */
+            #endregion
+            #region Q11
+            //Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+
+            /*
+            int? year = null;
+            Console.WriteLine(year.HasValue);
+            #endregion
+            #region Q9
+            year = 2023;
+            Console.WriteLine(year.Value);
+            */
+            #endregion
+            #region Q12
+            //Declare a string? reviewer = null;. Print whether it is null.
+            /*
+            string? reviewer = null;
+            Console.WriteLine(reviewer == null);
+            */
+            #endregion
+            #region Q13,Q14
+            //Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and print the result.
+
+            // Using title from the previous question, use ?? to print "Untitled" if title is null.Then use ??= to assign title the value "Untitled" only if it's still null.
+
+            /*
+            Book? book = null;
+            Console.WriteLine(book?.title ?? "untitled");
+            tled");
+            if (book == null)
+            {
+                book = new Book();
+            }
+            book.title ??= "untitled"; 
+            */
+            #endregion
+            #region Q15
+            //Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable string confirmedName using the ! operator.
+
+            /*
+            string? name = "ahmed";
+            string confirmedname = name!;
+            Console.WriteLine(confirmedname);
+            */
+            #endregion
+
+
+
+
+
 
         }
     }
