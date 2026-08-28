@@ -37,13 +37,7 @@ namespace c_01
                 Console.WriteLine(b.GetType());
                 */
             #endregion
-            #region q3
-            //Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it.
-            //int pages = "464";
-
-            //int pages="495" this is a logical error it should be int pages=495;
-
-            #endregion
+            
         }
     }
 }
