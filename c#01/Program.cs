@@ -115,6 +115,17 @@ namespace c_01
                Console.WriteLine(pg.GetType());
                */
             #endregion
+            #region Q10
+            //Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+
+            /*
+                int copies = 100;
+                object obj = copies;
+                int z = (int)obj;
+                Console.WriteLine(obj);
+                Console.WriteLine(z);
+                */
+            #endregion
 
 
 
