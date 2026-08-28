@@ -80,6 +80,14 @@ namespace c_01
                int yr = int.Parse(yeartext);
                */
             #endregion
+            #region Q7
+            //Given string pagesText = "464";, convert it into an int using the Convert class.
+
+            string pagestext = "464";
+            int pt = Convert.ToInt32(pagestext); 
+            #endregion
+
+           
         }
     }
 }
