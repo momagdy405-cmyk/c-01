@@ -126,6 +126,18 @@ namespace c_01
                 Console.WriteLine(z);
                 */
             #endregion
+            #region Q11
+            //Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+
+            /*
+            int? year = null;
+            Console.WriteLine(year.HasValue);
+            #endregion
+            #region Q9
+            year = 2023;
+            Console.WriteLine(year.Value);
+            */
+            #endregion
 
 
 
