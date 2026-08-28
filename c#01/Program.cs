@@ -48,6 +48,8 @@ namespace c_01
 
             #endregion
             #region q4
+            //Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
+
             /*
                 try
                 {
@@ -67,12 +69,16 @@ namespace c_01
                 */
             #endregion
             #region Q5
+            //Declare an int pages = 300; then store it in a double variable without using a cast.
+
             /*
                 int pages = 300;
                 double v = pages;
                 */
             #endregion
             #region Q6
+            //Declare a double price = 49.99; then convert it into an int using a cast.
+
             /*
                double price = 49.99;
                int p = Convert.ToInt32(price);
@@ -162,9 +168,17 @@ namespace c_01
             book.title ??= "untitled"; 
             */
             #endregion
-            
+            #region Q15
+            //Given string? name = "Ahmed"; (you are sure it's not null here), assign it to a non-nullable string confirmedName using the ! operator.
 
-           
+            /*
+            string? name = "ahmed";
+            string confirmedname = name!;
+            Console.WriteLine(confirmedname);
+            */
+            #endregion
+
+
 
 
 
